@@ -10,7 +10,7 @@ public class Main {
              return 1;
         } else {
          int fib1 = fibanachi(fib-1)+fibanachi(fib-2);
-          System.out.println(fib1);
+         // System.out.println(fib1);
         return fib1;
         }
     }
