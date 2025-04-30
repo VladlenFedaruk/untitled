@@ -2,16 +2,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        swichCase(); //fiban();
+        swichCase();
     }
-
-    public static int fiban(int fib){
-        if ((fib==0) || (fib==1)){
-        return 1;
-    } else {
-        int fib1 = fiban(fib) + fiban(fib-1);
-        return 1;
-    }}
+    public static int fibanachi(int fib) {
+        // Scanner scanner1 = new Scanner(System.in);
+         if (fib==2){
+             return 1;
+        } else {
+         int fib1 = fibanachi(fib-1)+fibanachi(fib-2);
+          System.out.println(fib1);
+        return fib1;
+        }
+    }
     public static void swichCase() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("ВВедите номер задачи (от 1 до 5)");
@@ -53,11 +55,12 @@ public class Main {
                 break;
             case 4: {
                 System.out.println("вы выбрали задачу №4");
-                //System.out.println("введите число из ряда Фибоначи");
+                System.out.println("введите номер числа из ряда Фибоначи");
+                int fib = scanner.nextInt();
+                //fibanachi(fib);
+                System.out.println("окончательный ответ " + fibanachi(fib));
 
-               // System.out.println("значение");
-
-                }
+              }
 
                 break;
             case 5:{
