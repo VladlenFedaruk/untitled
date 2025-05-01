@@ -70,6 +70,9 @@ public class Main {
                         System.out.println("спасибо");
                         j = 1;
                     }
+                    else {
+                        System.out.println(ch5);
+                    }
                     }
                 while (j!=1);
             }
